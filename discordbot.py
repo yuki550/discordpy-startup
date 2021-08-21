@@ -2,6 +2,7 @@ import discord
 import random
 
 client = discord.Client()
+token = "ODcwNjMyOTE4Mzc5Mjk0ODEw.YQPmFw.x6i6qeUonuM2E9DkR-6KUrSt5Vs"
 
 @client.event
 async def on_ready():
@@ -44,7 +45,3 @@ async def on_message(message):
 
 
 client.run(token)
-
-
-token = getenv('DISCORD_BOT_TOKEN')
-bot.run(token)
