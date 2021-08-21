@@ -2,7 +2,6 @@ import discord
 import random
 
 client = discord.Client()
-token = "ODcwNjMyOTE4Mzc5Mjk0ODEw.YQPmFw.x6i6qeUonuM2E9DkR-6KUrSt5Vs"
 
 @client.event
 async def on_ready():
@@ -43,5 +42,6 @@ async def on_message(message):
         q.remove(message.content[5:])
         await message.add_reaction('👍')
 
+bot = os.environ[DISCORD_BOT_TOKEN]
 
-client.run(token)
+bot.run(token)
